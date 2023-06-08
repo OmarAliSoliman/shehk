@@ -1,0 +1,21 @@
+<svg id="Group_175609" data-name="Group 175609" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.472" height="30.472" viewBox="0 0 30.472 30.472">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_599" data-name="Ellipse 599" cx="15.236" cy="15.236" r="15.236" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd676"/>
+      <stop offset="0.25" stop-color="#f2a454"/>
+      <stop offset="0.38" stop-color="#f05c3c"/>
+      <stop offset="0.7" stop-color="#c22f86"/>
+      <stop offset="0.96" stop-color="#6666ad"/>
+      <stop offset="0.99" stop-color="#5c6cb2"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_175608" data-name="Group 175608" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <circle id="Ellipse_598" data-name="Ellipse 598" cx="31.742" cy="31.742" r="31.742" transform="translate(-25.393 -3.809)" fill="url(#radial-gradient)"/>
+  </g>
+  <circle id="Ellipse_607" data-name="Ellipse 607" cx="1.27" cy="1.27" r="1.27" transform="translate(20.315 8.888)" fill="#fff"/>
+  <path id="Path_12052" data-name="Path 12052" d="M52.719,48a4.719,4.719,0,1,0,4.719,4.719A4.719,4.719,0,0,0,52.719,48Zm0,7.079a2.36,2.36,0,1,1,2.36-2.36A2.36,2.36,0,0,1,52.719,55.079Z" transform="translate(-36.847 -37.483)" fill="#fff"/>
+  <rect id="Rectangle_162147" data-name="Rectangle 162147" width="19.045" height="17.775" rx="4" transform="translate(6.348 6.348)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+</svg>
