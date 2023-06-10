@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,6 +16,71 @@
 </head>
 
 <body>
+
+  <!-- loading -->
+  <div class="splach">
+
+    <div class="book">
+      <div class="inner">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1" class="open">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item"><a class="nav-link" href="">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="">سيرة الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">تفسير القرآن العظيم</a></li>
+            <li class="nav-item"><a class="nav-link" href="">دروس الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">دروس الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">فتاوي</a></li>
+            <li class="nav-item"><a class="nav-link" href="">الصوتيات</a></li>
+            <li class="nav-item"><a class="nav-link" href="">كتب</a></li>
+            <li class="nav-item"><a class="nav-link" href="">الكلمة الشهرية</a></li>
+            <li class="nav-item"><a class="nav-link" href="">مكتبة الفيديو</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- top header -->
   <div class="top-header">
@@ -52,6 +118,15 @@
     <div class="right-corner-img">
       <img src="./assets/images/topheader-mosque.svg" alt="">
     </div>
+    
+    <div class="menu_icon" data-cursor="-icon">
+      <div id="nav-icon1">
+        <!-- <span></span> -->
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <div class="container">
       <div class="logo">
         <a href="./index.html"><img src="./assets/images/logo.svg" alt=""></a>
@@ -79,7 +154,7 @@
 
       <div class="header-contetn">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-7">
+          <div class="col-sm-12 col-md-12 col-lg-7">
             <div class="contetn-par">
               <div class="wrapper">
                 <p>
@@ -93,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-5">
             <div class="header-img">
               <img src="./assets/images/header-img-left.png" alt="">
             </div>
@@ -142,7 +217,7 @@
   <div class="artical-page artical-details-page mt-4 mb-4">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-8">
+        <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="box-wrapper">
             <div class="box-header">
               <img src="./assets/images/small-right-headr.svg" alt="">
@@ -442,7 +517,7 @@
         </div>
 
 
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="left-side">
             <div class="new-audio chosen-subject">
               <div class="box-wrapper">
@@ -633,7 +708,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-4">
+        <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="footer-contet footer-contet2">
             <h5>الدعم</h5>
             <ul class="list-unstyled">
@@ -644,7 +719,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-3">
+        <div class="col-sm-12 col-md-3 col-lg-3">
           <div class="social text-center">
             <h5>تابعنا على مواقع التواصل الاجتماعي:</h5>
             <ul class="list-unstyled d-flex align-items-center justify-content-center">
@@ -666,6 +741,7 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/wow.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>

@@ -16,16 +16,15 @@ $(document).ready(function () {
       dots: false,
     });
   }
-  
 
-  if($(".latest-news-slider-wrapper").length){
-    $('.latest-news-slider-wrapper').slick({
+  if ($(".latest-news-slider-wrapper").length) {
+    $(".latest-news-slider-wrapper").slick({
       rtl: true,
       slidesToShow: 4,
       arrows: false,
       slidesToScroll: 1,
       infinite: true,
-      autoplay: true, 
+      autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
         {
@@ -50,11 +49,10 @@ $(document).ready(function () {
           },
         },
       ],
-    })
+    });
   }
 
-
-  $(".logo #nav-icon1").click(function () {
+  $(".middle-header #nav-icon1").click(function () {
     // $(this).addClass("open");
     // $(this).parent().toggleClass("menu_icon-active");
     $(".side-nav").addClass("side-nav-open");
@@ -81,45 +79,36 @@ $(document).ready(function () {
 
   if ($(".custom-select").length) {
     $(".custom-select").niceSelect();
-
   }
 
   if ($(".animate__animated").length) {
     new WOW().init();
   }
 
-
-  if ($('#today').length) {
+  if ($("#today").length) {
     const ar = new Intl.DateTimeFormat("ar-TN-u-ca-islamic", {
       day: "numeric",
       month: "long",
       weekday: "long",
-      year: "numeric"
+      year: "numeric",
     }).format(Date.now());
 
     const en = new Intl.DateTimeFormat("ar", {
       day: "numeric",
       month: "long",
       weekday: "long",
-      year: "numeric"
+      year: "numeric",
     }).format(Date.now());
 
     document.getElementById("today").innerHTML = `${en} / ${ar}`;
-
   }
 
+  if ($(".animate__animated").length) {
+    WOW().init();
+  }
 });
 
-if ($(".animation-debth").length) {
-  var circles = document.querySelector(".animation-debth");
-  var parallaxInstance = new Parallax(circles);
-}
-if ($(".animation-debth2").length) {
-  var circles = document.querySelector(".animation-debth2");
-  var parallaxInstance = new Parallax(circles);
-}
-
 $(window).on("load", function () {
-  $("html").removeClass("splash-active")
-  $(".splash").addClass("splashscreen-none");
+  $("html").removeClass("splash-active");
+  $(".splach").addClass("splashscreen-none");
 });

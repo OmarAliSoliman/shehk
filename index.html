@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="splash-active">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,6 +17,74 @@
 
 <body>
 
+  
+
+  <!-- loading -->
+  <div class="splach">
+
+    <div class="book">
+      <div class="inner">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- overlay sidenav opened -->
+  <div class="bg-side-open"></div>
+
+  <!-- mobile navbar -->
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="close-nav">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1" class="open">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li class="nav-item"><a class="nav-link" href="">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="">سيرة الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">تفسير القرآن العظيم</a></li>
+            <li class="nav-item"><a class="nav-link" href="">دروس الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">دروس الشيخ</a></li>
+            <li class="nav-item"><a class="nav-link" href="">فتاوي</a></li>
+            <li class="nav-item"><a class="nav-link" href="">الصوتيات</a></li>
+            <li class="nav-item"><a class="nav-link" href="">كتب</a></li>
+            <li class="nav-item"><a class="nav-link" href="">الكلمة الشهرية</a></li>
+            <li class="nav-item"><a class="nav-link" href="">مكتبة الفيديو</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- top header -->
   <div class="top-header">
     <div class="bg">
@@ -23,10 +92,10 @@
     </div>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-12 col-lg-6">
           <div id="today"></div>
         </div>
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-12 col-lg-6">
           <div class="search-social d-flex align-items-center justify-content-end">
             <div class="search">
               <img src="./assets/images/search.svg" alt="">
@@ -48,10 +117,19 @@
   </div>
 
   <!-- midlle-header -->
-  <div class="middle-header">
+  <div class="middle-header wow animate__animated animate__fadeInUp">
     <div class="right-corner-img">
       <img src="./assets/images/topheader-mosque.svg" alt="">
     </div>
+
+    <div class="menu_icon" data-cursor="-icon">
+      <div id="nav-icon1">
+        <!-- <span></span> -->
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <div class="container">
       <div class="logo">
         <a href="./index.html"><img src="./assets/images/logo.svg" alt=""></a>
@@ -62,7 +140,7 @@
   <!-- header-navbar -->
   <div class="header-navbar">
     <div class="container">
-      <div class="mynavbar">
+      <div class="mynavbar wow animate__animated animate__fadeInUp">
         <ul class="list-unstyled d-flex align-items-center">
           <li><a href="">الرئيسية</a></li>
           <li><a href="">سيرة الشيخ</a></li>
@@ -77,9 +155,9 @@
         </ul>
       </div>
 
-      <div class="header-contetn">
+      <div class="header-contetn wow animate__animated animate__fadeInUp">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-7">
+          <div class="col-sm-12 col-md-12 col-lg-7">
             <div class="contetn-par">
               <div class="wrapper">
                 <p>
@@ -93,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-5">
             <div class="header-img">
               <img src="./assets/images/header-img-left.png" alt="">
             </div>
@@ -157,8 +235,8 @@
           <div class="col-sm-12 col-lg-7">
             <div class="site-news-cards">
               <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                  <div class="site-news-card">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="site-news-card wow animate__animated animate__fadeInUp">
                     <div class="card-img">
                       <div class="img-parent">
                         <img src="./assets/images/news.webp" alt="">
@@ -170,9 +248,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="first-card">
-                    <div class="site-news-card">
+                    <div class="site-news-card wow animate__animated animate__fadeInUp">
                       <div class="card-img">
                         <div class="img-parent">
                           <img src="./assets/images/news2.webp" alt="">
@@ -185,7 +263,7 @@
                     </div>
                   </div>
                   <div class="second-card">
-                    <div class="site-news-card d-flex align-items-center">
+                    <div class="site-news-card wow animate__animated animate__fadeInUp d-flex align-items-center">
                       <div class="card-body">
                         <h5>فضائل شهر شعبان</h5>
                         <a href="" class="btn-style">المزيد</a>
@@ -221,7 +299,7 @@
         <div class="articals-cards custom-articals">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/blog1.webp" alt="">
@@ -246,7 +324,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/blog2.webp" alt="">
@@ -272,7 +350,7 @@
 
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/blog3.webp" alt="">
@@ -310,7 +388,7 @@
 
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/fatwa.webp" alt="">
@@ -331,7 +409,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/fatwa2.webp" alt="">
@@ -371,7 +449,7 @@
 
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/book1.webp" alt="">
@@ -393,7 +471,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/book2.webp" alt="">
@@ -416,7 +494,7 @@
 
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="artical-card">
+              <div class="artical-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/book3.webp" alt="" />
@@ -454,17 +532,17 @@
   <div class="tow-side-sections">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-8">
+        <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="right-side">
             <a href="" class="emmam-photo">
-              <div class="card-img">
+              <div class="card-img wow animate__animated animate__fadeInUp">
                 <div class="img-parent">
                   <img src="./assets/images/bigimg.webp" alt="">
                 </div>
               </div>
             </a>
 
-            <div class="quraan-explain mt-4">
+            <div class="quraan-explain mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -472,7 +550,7 @@
                   <img src="./assets/images/small-left-header.svg" alt="">
                 </div>
                 <div class="quraan-explain-slider" dir="ltr">
-                  <div class="slider-item">
+                  <div class="slider-item qura-card">
                     <h5>تفسير قوله تعالى: ﴿وَمَن لَّمْ يَحْكُم بِمَا أَنزَلَ اللّهُ فَأُوْلَـئِكَ هُمُ الْكَافِرُونَ﴾
                     </h5>
                     <p>
@@ -485,7 +563,7 @@
                     </a>
                   </div>
 
-                  <div class="slider-item">
+                  <div class="slider-item qura-card">
                     <h5>تفسير قوله تعالى: ﴿وَمَن لَّمْ يَحْكُم بِمَا أَنزَلَ اللّهُ فَأُوْلَـئِكَ هُمُ الْكَافِرُونَ﴾
                     </h5>
                     <p>
@@ -502,7 +580,7 @@
             </div>
 
 
-            <div class="quraan-explain choosen-videos mt-4">
+            <div class="quraan-explain choosen-videos mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -523,7 +601,8 @@
                         <div class="img-parent">
                           <img src="./assets/images/chosevideo.webp" alt="">
                         </div>
-                        <a href="#" class="play-btn">
+                        <a href="https://www.youtube.com/watch?v=eZNYd7Qfyo8&ab_channel=QuranRecitation-Topic"
+                          class="play-btn" data-fancybox="gallery" rel="group1">
                           <i class="fa fa-play"></i>
                         </a>
                       </div>
@@ -543,7 +622,8 @@
                         <div class="img-parent">
                           <img src="./assets/images/chosevideo.webp" alt="">
                         </div>
-                        <a href="#" class="play-btn">
+                        <a href="https://www.youtube.com/watch?v=eZNYd7Qfyo8&ab_channel=QuranRecitation-Topic"
+                          class="play-btn" data-fancybox="gallery" rel="group1">
                           <i class="fa fa-play"></i>
                         </a>
                       </div>
@@ -553,7 +633,7 @@
               </div>
             </div>
 
-            <div class="new-audio-video mt-4">
+            <div class="new-audio-video mt-4 wow animate__animated animate__fadeInUp">
               <div class="row">
                 <div class="col-sm-12 col-lg-6">
                   <div class="new-audio">
@@ -633,10 +713,10 @@
 
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="left-side">
 
-            <div class="new-audio chosen-subject">
+            <div class="new-audio chosen-subject wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -669,7 +749,7 @@
             </div>
 
 
-            <div class="famous-world mt-4">
+            <div class="famous-world mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -694,7 +774,7 @@
             </div>
 
 
-            <div class="famous-world subscription mt-4">
+            <div class="famous-world subscription mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -759,11 +839,11 @@
   <div class="tow-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-8">
+        <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="right-section">
 
 
-            <div class="new-audio guest-site mt-4">
+            <div class="new-audio guest-site mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -800,7 +880,7 @@
             </div>
 
 
-            <div class="new-audio guest-site mt-4">
+            <div class="new-audio guest-site mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -837,10 +917,10 @@
 
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="left-section">
 
-            <div class="new-audio guest-site box-cooments mt-4">
+            <div class="new-audio guest-site box-cooments mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -869,7 +949,7 @@
               </div>
             </div>
 
-            <div class="new-audio guest-site box-cooments mt-4">
+            <div class="new-audio guest-site box-cooments mt-4 wow animate__animated animate__fadeInUp">
               <div class="box-wrapper">
                 <div class="box-header">
                   <img src="./assets/images/small-right-headr.svg" alt="">
@@ -917,36 +997,36 @@
         <div class="matwyat-cards">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="matwya-card">
+              <a href="" class="matwya-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/news.webp" alt="">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="matwya-card">
+              <a href="" class="matwya-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/news2.webp" alt="">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="matwya-card">
+              <a href="" class="matwya-card wow animate__animated animate__fadeInUp">
                 <div class="card-img">
                   <div class="img-parent">
                     <img src="./assets/images/news3.webp" alt="">
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="btn-more text-center mt-5">
                 <a href="" class="btn-style">المزيد</a>
               </div>
@@ -959,7 +1039,7 @@
   </div>
 
 
-  <div class="upper-footer">
+  <div class="upper-footer wow animate__animated animate__fadeInUp">
     <div class="container">
       <div class="logo">
         <a href="./index.html">
@@ -999,7 +1079,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-4">
+        <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="footer-contet footer-contet2">
             <h5>الدعم</h5>
             <ul class="list-unstyled">
@@ -1010,7 +1090,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-3">
+        <div class="col-sm-12 col-md-3 col-lg-3">
           <div class="social text-center">
             <h5>تابعنا على مواقع التواصل الاجتماعي:</h5>
             <ul class="list-unstyled d-flex align-items-center justify-content-center">
@@ -1030,6 +1110,7 @@
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/wow.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
