@@ -103,9 +103,49 @@ $(document).ready(function () {
     document.getElementById("today").innerHTML = `${en} / ${ar}`;
   }
 
+  $('.audio').each(function() {
+    // console.log(this);
+    var isPlaying = false;
+    var resumePosition = 0;
+    var audio = null;
+  
+    $(this).on('click', function(e) {
+      e.preventDefault();
+  
+      if (audio === null) {
+        var link = $(this).attr("href");
+        audio = new Audio(link);
+      }
+  
+      if (!isPlaying) {
+        audio.currentTime = resumePosition;
+        audio.play();
+        $(this).find("span").text("ايقاف");
+        isPlaying = true;
+      } else {
+        audio.pause();
+        $(this).find("span").text("تشغيل");
+        isPlaying = false;
+        resumePosition = audio.currentTime;
+      }
+    });
+  });
+
   if ($(".animate__animated").length) {
     WOW().init();
   }
+
+  // if($('audio').length){
+  //   $('audio').audioPlayer({
+  //     classPrefix: 'audioplayer',
+  //     strPlay: '',
+  //     strPause: '',
+  //     strVolume: ''
+  //   });
+  // }
+
+ 
+
 });
 
 $(window).on("load", function () {
