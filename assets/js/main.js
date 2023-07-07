@@ -103,46 +103,71 @@ $(document).ready(function () {
     document.getElementById("today").innerHTML = `${en} / ${ar}`;
   }
 
-  $('.audio').each(function() {
-    // console.log(this);
-    var isPlaying = false;
-    var resumePosition = 0;
-    var audio = null;
+  // $('.audio').each(function() {
+  //   // console.log(this);
+  //   var isPlaying = false;
+  //   var resumePosition = 0;
+  //   var audio = null;
   
-    $(this).on('click', function(e) {
+  //   $(this).on('click', function(e) {
+  //     e.preventDefault();
+  
+  //     if (audio === null) {
+  //       var link = $(this).attr("href");
+  //       audio = new Audio(link);
+  //     }
+  
+  //     if (!isPlaying) {
+  //       audio.currentTime = resumePosition;
+  //       audio.play();
+  //       $(this).find("span").text("ايقاف");
+  //       isPlaying = true;
+  //     } else {
+  //       audio.pause();
+  //       $(this).find("span").text("تشغيل");
+  //       isPlaying = false;
+  //       resumePosition = audio.currentTime;
+  //     }
+  //   });
+  // });
+
+
+  if($('.audio').length){
+    $('.audio').on('click', function(e){
       e.preventDefault();
-  
-      if (audio === null) {
-        var link = $(this).attr("href");
-        audio = new Audio(link);
-      }
-  
-      if (!isPlaying) {
-        audio.currentTime = resumePosition;
-        audio.play();
-        $(this).find("span").text("ايقاف");
-        isPlaying = true;
-      } else {
-        audio.pause();
-        $(this).find("span").text("تشغيل");
-        isPlaying = false;
-        resumePosition = audio.currentTime;
-      }
+      var link = $(this).attr("data-audio");
+      $(".sound_modal").addClass("sound_modal_active")
+      $(".sound_modal audio").attr("src", link);
+      $(".sound_modal audio")[0].play();
+      $(".sound_modal .audioplayer").addClass("audioplayer-playing");
+      $("html").addClass("modal-active");
     });
-  });
+  }
+
+
+  if($('.sound_modal').length){
+    $('.sound_modal audio').audioPlayer({
+      classPrefix: 'audioplayer',
+      strPlay: '',
+      strPause: '',
+      strVolume: ''
+    });
+
+    $(".sound_modal .close_sound_modal").click(function(){
+      $(".sound_modal audio")[0].pause();
+      $(".sound_modal audio").attr("src", "");
+      $(".sound_modal .audioplayer").removeClass("audioplayer-playing");
+      $(".sound_modal").removeClass("sound_modal_active")
+      $("html").removeClass("modal-active");
+    });
+  }
 
   if ($(".animate__animated").length) {
     WOW().init();
   }
 
-  // if($('audio').length){
-  //   $('audio').audioPlayer({
-  //     classPrefix: 'audioplayer',
-  //     strPlay: '',
-  //     strPause: '',
-  //     strVolume: ''
-  //   });
-  // }
+  
+
 
  
 

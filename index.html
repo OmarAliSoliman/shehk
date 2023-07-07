@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/audioplayer.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Home</title>
 </head>
@@ -649,7 +650,7 @@
                             <p>شرح الأصول الثلاثة ( معني الحنيفية و الأصول ال …..</p>
                           </a>
                           <div class="option">
-                            <a href="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
+                            <a data-audio="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
                             <a href="" download><img src="./assets/images/download.svg" alt=""> <span>تحميل</span> </a>
                           </div>
                         </li>
@@ -658,7 +659,7 @@
                             <p>شرح الأصول الثلاثة ( المسائل الأربعة )</p>
                           </a>
                           <div class="option">
-                            <a href="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
+                            <a data-audio="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
                             <a href=""><img src="./assets/images/download.svg" alt=""> <span>تحميل</span> </a>
                           </div>
                         </li>
@@ -667,7 +668,7 @@
                             <p>مقدمة في شرح الأصول الثلاثة</p>
                           </a>
                           <div class="option">
-                            <a href="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
+                            <a data-audio="./assets/audio/audio.mp3" class="audio" ><img src="./assets/images/audio.svg" alt=""> <span>استماع</span> </a>
                             <a href=""><img src="./assets/images/download.svg" alt=""> <span>تحميل</span> </a>
                           </div>
                         </li>
@@ -1106,12 +1107,20 @@
     </div>
   </footer>
 
+  <div class="sound_modal">
+    <div class="close_sound_modal">
+      <i class="far fa-times-circle"></i>
+    </div>
+    <audio src="./assets/audio/audio.mp3" controls preload="auto" loop controlsList="nodownload"></audio>
+  </div>
+
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/wow.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/audioplayer.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

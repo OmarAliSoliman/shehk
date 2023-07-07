@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/audioplayer.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Course Details</title>
 </head>
@@ -314,7 +315,7 @@
                   <li><span>عدد الزيارات</span><span>1,175</span></li>
                 </ul>
                 <div class="option d-flex align-items-center">
-                  <a href="./assets/audio/audio.mp3" class="op1 audio"  ><img src="./assets/images/hear2.svg" alt=""> <span>استماع</span> </a>
+                  <a data-audio="./assets/audio/music_test2_القران الكريم_سور-قصيرة-من-القران-الكريم_سورة الفلق.mp3" class="op1 audio"  ><img src="./assets/images/hear2.svg" alt=""> <span>استماع</span> </a>
                   <a href="" class="op1" download><img src="./assets/images/download2.svg" alt=""><span>تحميل</span></a>
                 </div>
               </div>
@@ -523,6 +524,13 @@
   </footer>
 
 
+  <div class="sound_modal">
+    <div class="close_sound_modal">
+      <i class="far fa-times-circle"></i>
+    </div>
+    <audio src="./assets/audio/audio.mp3" controls preload="auto" loop controlsList="nodownload"></audio>
+  </div>
+
 
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
@@ -531,6 +539,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./assets/js/jquery.mCustomScrollbar.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/audioplayer.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

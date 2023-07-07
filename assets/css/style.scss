@@ -254,7 +254,7 @@ p {
   }
 }
 
-.side-active {
+.side-active, .modal-active {
   height: 100vh;
   overflow: hidden;
 
@@ -268,6 +268,7 @@ p {
     z-index: 4;
   }
 }
+
 
 .splash-active {
   height: 100vh;
@@ -643,8 +644,120 @@ p {
   }
 }
 
-#audio{
+.audio{
   display: block;
+  cursor: pointer;
+}
+
+.sound_modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+  background-color: #fff;
+  width: 700px;
+  max-width: 100%;
+  z-index: 99;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 4px 5px rgba(#000000, 0.16);
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  padding-top: 60px;
+  .close_sound_modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    i{
+      font-size: 2rem;
+      color: $mainColor;
+    }
+  }
+  .fa-play {
+    background-color: $mainColor !important;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 7px;
+    font-size: 13px;
+  }
+  .fa-download {
+    background-color: $mainColor;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 7px;
+    font-size: 13px;
+  }
+  .audioplayer {
+    direction: ltr;
+    background-color: #efefef;
+    height: 50px;
+    border: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+    border: 0;
+  }
+  .audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+    border-left: 12px solid #454c3f;
+  }
+  .audioplayer:not(.audioplayer-playing) .audioplayer-playpause:hover {
+    background-color: transparent;
+    border: none !important;
+  }
+  .audioplayer-bar-played::after {
+    display: none;
+  }
+  .audioplayer-bar-played {
+    height: 13px;
+  }
+  .audioplayer-bar::before {
+    height: 13px;
+  }
+  .audioplayer-bar-loaded {
+    height: 13px;
+  }
+  .audioplayer-bar {
+    height: 22px;
+  }
+  .audioplayer-playing .audioplayer-playpause a::before,
+  .audioplayer-playing .audioplayer-playpause a::after {
+    background-color: #000;
+  }
+  .audioplayer-playing .audioplayer-playpause {
+    border: 0 !important;
+  }
+  .audioplayer:not(.audioplayer-mute) .audioplayer-volume-button a:after {
+    left: 10px;
+    top: 0px;
+    width: 8px;
+    height: 8px;
+  }
+  .audioplayer-bar-played {
+    background: $mainColor !important;
+  }
+  .audioplayer-playing .audioplayer-bar-played::after {
+    border: 2px solid #f5ab35;
+  }
+  .audioplayer-volume-adjust div div {
+    background-color: $mainColor;
+  }
+}
+
+.sound_modal_active{
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+  transform: translate(-50%, -50%);
 }
 
 .splach {
